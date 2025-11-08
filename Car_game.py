@@ -8,14 +8,14 @@ if play_game=='yes':
             count_start+=1
             count_stop=0
             if count_start>1:
-                print('The car is already started(Kya kar raha h bahinchod)')
+                print('The car is already started')
             elif count_start==1:
                 print('The car is started')
         elif initiate=='stop':
             count_stop+=1
             count_start=0
             if count_stop>1:
-                print('The car is already stopped(kya chutiya h re gawar)')
+                print('The car is already stopped')
             elif count_stop==1:
                 print('The car is stopped')
         elif initiate=='help':
