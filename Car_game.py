@@ -1,9 +1,9 @@
-play_game= input('Do you want to play the game? Yes or no').lower()
+play_game= input('Do you want to play the game ? Yes or no : ').lower()
 count_start=0
 count_stop=0
 if play_game=='yes':
     while  True:
-        initiate=input('>').lower()
+        initiate=input('(start,stop,help,quit) \n> ').lower()
         if initiate=='start':
             count_start+=1
             count_stop=0
@@ -25,6 +25,14 @@ Stop: to stop the car
 Quit: to quit the game
                   """)
         elif initiate=='quit':
+            print("Thanks for playing")
+            print('Have a nice day')
             break
+        # else :
+        #     print("Error in input Try correct input")
 elif play_game=="no":
     print('Have a nice day')
+
+
+
+    # print("Error in input Try correct input")
